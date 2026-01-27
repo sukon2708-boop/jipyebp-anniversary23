@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ความทรงจำ</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Fahkwang:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="card center">
+      <h1>ความทรงจำ</h1>
+      <p class="subtle">กดเล่นวิดีโอเพื่อย้อนดูช่วงเวลาดี ๆ </p>
+
+      <!-- VIDEO (ขนาดเดิม แต่ไม่ล้น) -->
+      <div class="video-wrapper">
+        <video
+          id="videoThumb"
+          src="assets/memory.mp4"
+          controls
+          muted
+          playsinline
+        ></video>
+      </div>
+
+      <a href="menu.html" class="btn secondary">ย้อนกลับ</a>
+    </div>
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal">
+      <video
+        id="bigVideo"
+        src="assets/memory.mp4"
+        controls
+        playsinline
+      ></video>
+
+      <button class="btn close" id="closeModalBtn">ปิด</button>
+    </div>
+  </div>
+
+  <script src="js/memories.js"></script>
+</body>
+</html>
